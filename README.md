@@ -1,4 +1,4 @@
-# VAANYA — Modern Editorial Fashion Atelier
+# SOYASTI CLOTHING — Modern Editorial Fashion Atelier
 
 Premium responsive fashion e-commerce frontend built with React, TypeScript, Vite and Tailwind CSS.
 

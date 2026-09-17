@@ -21,7 +21,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 
   return (
     <div className={`flex ${isVertical ? 'flex-col items-center text-center' : 'items-center'} gap-2.5 sm:gap-3 select-none group cursor-pointer`}>
-      {/* Vaanya Geometric Diamond Atelier Crest */}
+      {/* SOYASTI CLOTHING Geometric Diamond Atelier Crest */}
       <div className={`relative flex items-center justify-center transition-transform duration-300 group-hover:scale-105 text-[#B78343] ${
         size === 'sm' ? 'w-7 h-7' : size === 'lg' ? 'w-12 h-12' : size === 'hero' ? 'w-16 h-16 sm:w-20 sm:h-20' : 'w-9 h-9 sm:w-10 sm:h-10'
       }`}>
@@ -55,7 +55,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         </svg>
       </div>
 
-      {/* Vaanya Brand Typography */}
+      {/* SOYASTI CLOTHING Brand Typography */}
       <div className={`flex flex-col ${isVertical ? 'items-center mt-1' : ''}`}>
         <span
           className={`tracking-[0.24em] font-medium uppercase leading-none transition-colors duration-200 ${

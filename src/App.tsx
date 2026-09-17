@@ -35,7 +35,7 @@ export default function App() {
   // Cart State with LocalStorage
   const [cartItems, setCartItems] = useState<CartItem[]>(() => {
     try {
-      const saved = localStorage.getItem('vaanya_cart');
+      const saved = localStorage.getItem('SOYASTI CLOTHING_cart');
       if (saved) return JSON.parse(saved);
     } catch (e) {
       // ignore
@@ -55,7 +55,7 @@ export default function App() {
   // Wishlist State with LocalStorage
   const [wishlistIds, setWishlistIds] = useState<Set<string>>(() => {
     try {
-      const saved = localStorage.getItem('vaanya_wishlist');
+      const saved = localStorage.getItem('SOYASTI CLOTHING_wishlist');
       if (saved) return new Set(JSON.parse(saved));
     } catch (e) {
       // ignore
@@ -91,7 +91,7 @@ export default function App() {
   // Sync Cart to LocalStorage
   useEffect(() => {
     try {
-      localStorage.setItem('vaanya_cart', JSON.stringify(cartItems));
+      localStorage.setItem('SOYASTI CLOTHING_cart', JSON.stringify(cartItems));
     } catch (e) {
       // ignore
     }
@@ -100,7 +100,7 @@ export default function App() {
   // Sync Wishlist to LocalStorage
   useEffect(() => {
     try {
-      localStorage.setItem('vaanya_wishlist', JSON.stringify(Array.from(wishlistIds)));
+      localStorage.setItem('SOYASTI CLOTHING_wishlist', JSON.stringify(Array.from(wishlistIds)));
     } catch (e) {
       // ignore
     }

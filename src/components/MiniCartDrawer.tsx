@@ -47,10 +47,10 @@ export const MiniCartDrawer: React.FC<MiniCartDrawerProps> = ({
   const handleApplyPromo = (e: React.FormEvent) => {
     e.preventDefault();
     setPromoError('');
-    if (promoCode.trim().toUpperCase() === 'VAANYA15') {
+    if (promoCode.trim().toUpperCase() === 'SOYASTI CLOTHING15') {
       setAppliedDiscount(15);
     } else {
-      setPromoError('Invalid coupon. Try "VAANYA15"');
+      setPromoError('Invalid coupon. Try "SOYASTI CLOTHING15"');
     }
   };
 
@@ -212,7 +212,7 @@ export const MiniCartDrawer: React.FC<MiniCartDrawerProps> = ({
                 <Tag className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-[#888]" />
                 <input
                   type="text"
-                  placeholder="Coupon: try VAANYA15"
+                  placeholder="Coupon: try SOYASTI CLOTHING15"
                   value={promoCode}
                   onChange={(e) => setPromoCode(e.target.value)}
                   className="w-full pl-8 pr-3 py-2 bg-white text-xs text-[#171717] border border-[#D6CCC0] rounded-xs uppercase outline-none focus:border-[#B78343]"

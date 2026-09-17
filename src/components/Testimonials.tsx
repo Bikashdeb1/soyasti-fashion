@@ -22,7 +22,7 @@ export const Testimonials: React.FC = () => {
             LOVED BY OUR COMMUNITY
           </h2>
           <p className="text-xs sm:text-sm text-[#666666] mt-2">
-            Dispatches from clients wearing Vaanya across the globe.
+            Dispatches from clients wearing SOYASTI CLOTHING across the globe.
           </p>
         </div>
 

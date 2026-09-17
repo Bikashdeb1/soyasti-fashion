@@ -35,7 +35,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onOpenModal })
           <div className="lg:col-span-4 space-y-5">
             <BrandLogo variant="light" size="md" />
             <p className="text-xs sm:text-sm text-[#A89F93] leading-relaxed max-w-sm">
-              Vaanya Atelier crafts conscious luxury tailored with architectural restraint. Handcrafted from pure organic silks, unbleached linens, and hand-combed Pashmina.
+              SOYASTI CLOTHING Atelier crafts conscious luxury tailored with architectural restraint. Handcrafted from pure organic silks, unbleached linens, and hand-combed Pashmina.
             </p>
 
             {/* Social Icons */}

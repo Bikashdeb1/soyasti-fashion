@@ -34,7 +34,7 @@ export const SocialGallery: React.FC<SocialGalleryProps> = ({ onShopProductByNam
             className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-[#171717] hover:text-[#B78343] uppercase transition-colors"
           >
             <Instagram className="w-4 h-4 text-[#B78343]" />
-            <span>@VAANYASTUDIO</span>
+            <span>@SOYASTI CLOTHINGSTUDIO</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
         </div>

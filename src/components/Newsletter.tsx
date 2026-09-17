@@ -25,7 +25,7 @@ export const Newsletter: React.FC<NewsletterProps> = ({ onSuccessToast }) => {
       setStatus('success');
       setEmail('');
       if (onSuccessToast) {
-        onSuccessToast('Welcome to the Vaanya Atelier. Check your inbox for your 15% code.');
+        onSuccessToast('Welcome to the SOYASTI CLOTHING Atelier. Check your inbox for your 15% code.');
       }
     }, 600);
   };
@@ -59,7 +59,7 @@ export const Newsletter: React.FC<NewsletterProps> = ({ onSuccessToast }) => {
                 <span>You're subscribed!</span>
               </div>
               <p className="text-xs text-[#666666]">
-                Your 15% welcome voucher code <span className="font-mono font-bold text-[#171717]">VAANYA15</span> has been dispatched.
+                Your 15% welcome voucher code <span className="font-mono font-bold text-[#171717]">SOYASTI CLOTHING15</span> has been dispatched.
               </p>
               <button
                 type="button"

@@ -1,16 +1,16 @@
 import { Product, HeroSlide, CollectionCard, Benefit, Testimonial, SocialPost } from '../types';
 
 export const BRAND_INFO = {
-  name: 'VAANYA',
+  name: 'SOYASTI CLOTHING',
   subtitle: 'ATELIER',
-  fullName: 'VAANYA ATELIER',
+  fullName: 'SOYASTI CLOTHING ATELIER',
   tagline: 'Timeless Elegance, Modern Craft',
   description: 'Conscious luxury tailored with architectural restraint. Handcrafted from pure organic silks, unbleached linens, and hand-combed Pashmina.',
   contactPerson: 'Atelier Concierge',
   phone: '+91 11 4982 3000',
-  email: 'concierge@vaanya-atelier.com',
+  email: 'concierge@SOYASTI CLOTHING-atelier.com',
   address: 'The Crescent, Mehrauli, New Delhi 110030',
-  instagramHandle: '@vaanya.atelier',
+  instagramHandle: '@SOYASTI CLOTHING.atelier',
   freeShippingThreshold: 3999,
   returnPolicyDays: 30,
   logoType: 'svg' as const,
@@ -462,7 +462,7 @@ export const SOCIAL_GALLERY: SocialPost[] = [
   {
     id: 's1',
     image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80',
-    handle: '@vaanyastudio',
+    handle: '@SOYASTI CLOTHINGstudio',
     likes: '2.4k',
     caption: 'Quiet confidence in our Caramel Bronze Rib Set. Shot on location in Jaipur.',
     productTag: 'Minimalist Cotton Rib Co-ord'
@@ -472,7 +472,7 @@ export const SOCIAL_GALLERY: SocialPost[] = [
     image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
     handle: '@tanya_sharma',
     likes: '4.1k',
-    caption: 'Sunday mornings in pure unbleached linen. #VaanyaWomen',
+    caption: 'Sunday mornings in pure unbleached linen. #SOYASTI CLOTHINGWomen',
     productTag: 'Soft Linen Maxi Dress'
   },
   {
@@ -480,7 +480,7 @@ export const SOCIAL_GALLERY: SocialPost[] = [
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80',
     handle: '@aditya_k',
     likes: '1.9k',
-    caption: 'Architectural cuts for the everyday gentleman. @vaanyastudio',
+    caption: 'Architectural cuts for the everyday gentleman. @SOYASTI CLOTHINGstudio',
     productTag: 'Structured Linen Overshirt'
   },
   {
@@ -494,7 +494,7 @@ export const SOCIAL_GALLERY: SocialPost[] = [
   {
     id: 's5',
     image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80',
-    handle: '@vaanyastudio',
+    handle: '@SOYASTI CLOTHINGstudio',
     likes: '5.2k',
     caption: 'Light catch on mulberry silk. Crafted for lingering twilight evenings.',
     productTag: 'Bias-Cut Silk Slip Midi Dress'
