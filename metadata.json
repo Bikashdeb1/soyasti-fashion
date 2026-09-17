@@ -1,0 +1,6 @@
+{
+  "name": "VAANYA — Modern Editorial Fashion Atelier",
+  "description": "Conscious luxury fashion atelier for Men, Women & Kids. Crafted in certified organic silk, fine linen, and heritage handloom weaves.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
