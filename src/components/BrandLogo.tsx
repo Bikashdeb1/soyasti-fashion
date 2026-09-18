@@ -15,10 +15,17 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   const isVertical = layout === 'vertical';
 
   const sizeClasses = {
-    sm: 'h-8 sm:h-9',
-    md: 'h-10 sm:h-12',
-    lg: 'h-14 sm:h-16',
-    hero: 'h-16 sm:h-20'
+    // Mobile / compact uses
+    sm: 'h-10 sm:h-11',
+
+    // Main header logo
+    md: 'h-14 sm:h-16',
+
+    // Larger footer / special sections
+    lg: 'h-18 sm:h-20',
+
+    // Large brand presentation
+    hero: 'h-20 sm:h-24'
   };
 
   const logoSrc = `${import.meta.env.BASE_URL}images/soyastibrandlogo.jpg`;
@@ -29,12 +36,20 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         isVertical
           ? 'flex-col items-center justify-center'
           : 'items-center'
-      } select-none group cursor-pointer`}
+      } select-none group cursor-pointer shrink-0`}
     >
       <img
         src={logoSrc}
         alt={`${BRAND_INFO.name} logo`}
-        className={`${sizeClasses[size]} w-auto object-contain transition-transform duration-300 group-hover:scale-105`}
+        className={`
+          ${sizeClasses[size]}
+          w-auto
+          max-w-[150px]
+          object-contain
+          transition-transform
+          duration-300
+          group-hover:scale-105
+        `}
       />
     </div>
   );
