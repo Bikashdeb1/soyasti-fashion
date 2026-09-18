@@ -15,18 +15,25 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   const isVertical = layout === 'vertical';
 
   const sizeClasses = {
-    // Mobile / compact uses
-    sm: 'h-10 sm:h-11',
-
-    // Main header logo
-    md: 'h-14 sm:h-16',
-
-    // Larger footer / special sections
-    lg: 'h-18 sm:h-20',
-
-    // Large brand presentation
-    hero: 'h-20 sm:h-24'
+    sm: {
+      wrapper: 'w-[72px] h-[52px]',
+      image: 'w-[120px]'
+    },
+    md: {
+      wrapper: 'w-[105px] h-[72px]',
+      image: 'w-[175px]'
+    },
+    lg: {
+      wrapper: 'w-[125px] h-[85px]',
+      image: 'w-[205px]'
+    },
+    hero: {
+      wrapper: 'w-[150px] h-[105px]',
+      image: 'w-[245px]'
+    }
   };
+
+  const currentSize = sizeClasses[size];
 
   const logoSrc = `${import.meta.env.BASE_URL}images/soyastibrandlogo.jpg`;
 
@@ -35,22 +42,26 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       className={`flex ${
         isVertical
           ? 'flex-col items-center justify-center'
-          : 'items-center'
-      } select-none group cursor-pointer shrink-0`}
+          : 'items-center justify-center'
+      } shrink-0 select-none group cursor-pointer`}
     >
-      <img
-        src={logoSrc}
-        alt={`${BRAND_INFO.name} logo`}
-        className={`
-          ${sizeClasses[size]}
-          w-auto
-          max-w-[200px]
-          object-contain
-          transition-transform
-          duration-300
-          group-hover:scale-105
-        `}
-      />
+      <div
+        className={`${currentSize.wrapper} relative overflow-hidden flex items-center justify-center`}
+      >
+        <img
+          src={logoSrc}
+          alt={`${BRAND_INFO.name} logo`}
+          className={`
+            ${currentSize.image}
+            max-w-none
+            h-auto
+            object-contain
+            transition-transform
+            duration-300
+            group-hover:scale-105
+          `}
+        />
+      </div>
     </div>
   );
 };
