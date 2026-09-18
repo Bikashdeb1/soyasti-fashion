@@ -44,7 +44,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         className={`
           ${sizeClasses[size]}
           w-auto
-          max-w-[150px]
+          max-w-[200px]
           object-contain
           transition-transform
           duration-300
