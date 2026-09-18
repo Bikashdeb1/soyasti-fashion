@@ -14,26 +14,26 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 }) => {
   const isVertical = layout === 'vertical';
 
-  const sizeClasses = {
+  const sizes = {
     sm: {
-      wrapper: 'w-[72px] h-[52px]',
-      image: 'w-[120px]'
+      wrapper: 'w-[70px] h-[50px]',
+      image: 'w-[82px] h-[82px]'
     },
     md: {
-      wrapper: 'w-[105px] h-[72px]',
-      image: 'w-[175px]'
+      wrapper: 'w-[92px] h-[68px]',
+      image: 'w-[105px] h-[105px]'
     },
     lg: {
-      wrapper: 'w-[125px] h-[85px]',
-      image: 'w-[205px]'
+      wrapper: 'w-[110px] h-[78px]',
+      image: 'w-[120px] h-[120px]'
     },
     hero: {
-      wrapper: 'w-[150px] h-[105px]',
-      image: 'w-[245px]'
+      wrapper: 'w-[140px] h-[95px]',
+      image: 'w-[150px] h-[150px]'
     }
   };
 
-  const currentSize = sizeClasses[size];
+  const current = sizes[size];
 
   const logoSrc = `${import.meta.env.BASE_URL}images/soyastibrandlogo.jpg`;
 
@@ -46,20 +46,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       } shrink-0 select-none group cursor-pointer`}
     >
       <div
-        className={`${currentSize.wrapper} relative overflow-hidden flex items-center justify-center`}
+        className={`${current.wrapper} relative overflow-hidden flex items-center justify-center`}
       >
         <img
           src={logoSrc}
           alt={`${BRAND_INFO.name} logo`}
-          className={`
-            ${currentSize.image}
-            max-w-none
-            h-auto
-            object-contain
-            transition-transform
-            duration-300
-            group-hover:scale-105
-          `}
+          className={`${current.image} max-w-none object-contain absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 group-hover:scale-[1.03]`}
         />
       </div>
     </div>
