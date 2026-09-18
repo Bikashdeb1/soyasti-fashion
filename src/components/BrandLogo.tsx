@@ -21,7 +21,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     hero: 'h-16 sm:h-20'
   };
 
-  const logoSrc = `${import.meta.env.BASE_URL}soyastibrandlogo.JPG`;
+  const logoSrc = `${import.meta.env.BASE_URL}images/soyastibrandlogo.jpg`;
 
   return (
     <div
