@@ -20,10 +20,21 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   const textColor = isDark ? '#171717' : '#FFFFFF';
   const subColor = isDark ? '#666666' : '#D0CBC4';
 
+  /*
+   * The bird/crest image is stored at:
+   * public/images/soyastibrandlogo.jpg
+   *
+   * IMPORTANT:
+   * This image contains the bird/crest only.
+   * The SOYASTI CLOTHING text is rendered separately beside it.
+   */
+  const logoSrc =
+    `${import.meta.env.BASE_URL}images/soyastibrandlogo.jpg`;
+
   const sizes = {
     sm: {
-      logo: 'w-[42px] h-[42px]',
-      brand: 'text-[17px]',
+      logo: 'w-[38px] h-[38px]',
+      brand: 'text-[16px]',
       subtitle: 'text-[7px]',
       gap: 'gap-2'
     },
@@ -31,12 +42,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     md: {
       logo: 'w-[52px] h-[52px]',
       brand: 'text-[22px]',
-      subtitle: 'text-[9px]',
+      subtitle: 'text-[8px]',
       gap: 'gap-2.5'
     },
 
     lg: {
-      logo: 'w-[62px] h-[62px]',
+      logo: 'w-[64px] h-[64px]',
       brand: 'text-[27px]',
       subtitle: 'text-[10px]',
       gap: 'gap-3'
@@ -52,15 +63,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 
   const current = sizes[size];
 
-  const logoSrc =
-    `${import.meta.env.BASE_URL}images/soyasti-header-logo.jpg`;
-
   return (
     <div
       className={`
         flex
         ${isVertical
-          ? 'flex-col items-center'
+          ? 'flex-col items-center justify-center'
           : 'flex-row items-center'}
         ${current.gap}
         shrink-0
@@ -69,7 +77,9 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         group
       `}
     >
-      {/* Bird / Crest */}
+      {/* =========================================================
+          BRAND BIRD / CREST
+          ========================================================= */}
       <div
         className={`
           ${current.logo}
@@ -94,12 +104,16 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         />
       </div>
 
-      {/* Brand Name */}
+      {/* =========================================================
+          BRAND NAME + SUBTITLE
+          ========================================================= */}
       <div
         className={`
           flex
           flex-col
-          ${isVertical ? 'items-center text-center' : 'items-start'}
+          ${isVertical
+            ? 'items-center text-center'
+            : 'items-start'}
           leading-none
         `}
       >
@@ -130,7 +144,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
               whitespace-nowrap
             `}
             style={{
-              fontFamily: 'Arial, sans-serif',
+              fontFamily: 'Arial, Helvetica, sans-serif',
               color: subColor
             }}
           >
