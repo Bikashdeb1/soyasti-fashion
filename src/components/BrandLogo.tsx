@@ -29,7 +29,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
    * The SOYASTI CLOTHING text is rendered separately beside it.
    */
   const logoSrc =
-    `${import.meta.env.BASE_URL}images/soyastibrandlogo.jpg`;
+    `${import.meta.env.BASE_URL}images/soyasti-header-logo.png`;
 
   const sizes = {
     sm: {
